@@ -14,6 +14,8 @@ namespace AE.Net.Mail.Imap {
 		public virtual string[] Flags { get; internal set; }
 		public virtual bool IsWritable { get; internal set; }
 
+
+		// by hy
 		internal void SetFlags(string flags) {
 			Flags = flags.Split(' ');
 		}
